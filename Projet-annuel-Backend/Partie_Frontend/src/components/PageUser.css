@@ -1,0 +1,135 @@
+.dashboard {
+  min-height: 100vh;
+  padding: 20px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding: 10px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon-button:hover {
+  color: #4a90e2;
+}
+
+.search-filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.search-box, .filter-box, .sort-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 30px;
+}
+
+.search-box input, .filter-box select, .sort-box select {
+  background: none;
+  border: none;
+  color: #1398c8;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.files-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.file-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.file-card:hover {
+  transform: translateY(-5px);
+}
+
+.file-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.delete-button {
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #ff6b6b;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+gap: 50px;
+}
+
+.upload-button, .upload-submit {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover, .upload-submit:hover {
+  background-color: #5a9fe2;
+}
+
+.file-name-display {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
